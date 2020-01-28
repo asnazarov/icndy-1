@@ -1,0 +1,278 @@
+html{
+    box-sizing: border-box;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+body{margin: 0;}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+  }
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{margin: 0; padding: 0;}
+.page {
+    /* min-width: 1100px; 
+    max-width: 1700px;  */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+font-family: 'Poppins', sans-serif;
+background-image: url(../images/Layer.png);
+max-height: 800px;
+height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+opacity: 0.95;
+background-color: black;
+}
+.logo {
+position: absolute;
+top: 42px;
+left: 100px;
+width: 220px;
+height: 90px;
+}
+
+.menu {
+    position: absolute;
+    right: 100px;
+    top: 78px;
+}
+.menu>ul{
+    display: flex;
+    color: white;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+.menu>ul>li+li{
+    margin-left: 70px; 
+   
+}
+.header__title {
+    color: white;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 36px;
+    font-weight: 300;
+}
+.header__text {
+    font-size: 30px;
+    line-height: 75px;
+    color: #f84545;
+    letter-spacing: 12px;
+    font-weight: 700;
+}
+.arrow{
+    background-image: url(../images/arrow.png);
+    width: 84px;
+    height: 42px;
+    position: absolute;
+    bottom: 70px;
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+    background-position: center center;
+    box-sizing: content-box;
+}
+
+.body-tiles {
+    height: 1580px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr) 3fr;
+    background-color: white;
+    gap: 50px;
+    padding: 100px;
+}
+.body-tiles>a{
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px;
+}
+.body-tiles__text{
+    margin-top: 34px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 15px;
+}
+
+.nike {
+    grid-column: 3;
+    grid-row: 3/3;
+    background-image: url(../images/nike-bg.png);
+}
+.adidas {
+    grid-column: 3;
+    grid-row: 2;
+    background-image: url(../images/adidas-bg.jpg);
+}
+.deep {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url(../images/deep-bg.jpg);
+}
+.palace {
+    grid-column: 2;
+    grid-row: 3/3;
+    background-image: url(../images/palace-bg.jpg);
+}
+.carhartt {
+    grid-column: 3;
+    background-image: url(../images/carhartt-bg.jpg);
+}
+.gourmet {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url(../images/gourmet-bg.jpg);
+}
+
+.instagram{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    opacity: 0.86;
+    background-color: black;
+}
+
+.instagram__header{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-align: center;
+}
+.instagram__header h2{
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 20px;
+}
+.instagram__header p{
+    font-weight: 800;
+    color: #f84545;
+    font-size: 30px;
+    line-height: 75px;
+}
+
+.instagram__title {
+    box-sizing: border-box;
+    background-color: black;
+    background-position: 100%;
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+
+  .instagram__title a {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 25vw);
+    
+    background-color: black;
+   
+  }
+  
+ 
+  .gridimg {
+    background-image: url(../images/instagram/1.jpg);
+    background-size: cover;
+  }
+  .gridimg1 {
+      background-image: url(../images/instagram/1.jpg);
+      background-size: cover;
+}
+.gridimg2 {
+    background-image: url(../images/instagram/2.jpg);
+    background-size: cover;
+}
+.gridimg3 {
+    background-image: url(../images/instagram/3.jpg);
+    background-size: cover;
+}
+.gridimg4 {
+    background-image: url(../images/instagram/4.jpg);
+    background-size: cover;
+}
+.gridimg5 {
+    background-image: url(../images/instagram/5.jpg);
+    background-size: cover;
+}
+.gridimg6 {
+    background-image: url(../images/instagram/6.jpg);
+    background-size: cover;
+}
+.gridimg7 {
+    background-image: url(../images/instagram/7.jpg);
+    background-size: cover;
+}
+.gridimg8 {
+    background-image: url(../images/instagram/8.jpg);
+    background-size: cover;
+}
+
+
+
+.footer {
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.footer__menu{
+    display: flex;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+.footer__menu>li+li{
+    padding-left: 70px;
+}
+.icons{
+    display: flex;
+   
+    
+}
+.icons>li+li{
+    padding-left: 40px;
+
+}
+.icon__instagram::before  {
+    content: "\ea92";
+    font-family: 'icomoon';
+}
+.icon__facebook::before  {
+    content: "\ea90";
+    font-family: 'icomoon';
+}
+.icon__twitter::before {
+    content: "\ea96";
+    font-family: 'icomoon';
+}
